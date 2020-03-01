@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\CHITTI\Desktop\Amazon\testng.xml</span>
+                    <span>C:\Users\CHITTI\git\Demo\Amazon\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,12 +107,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.amazon.qa.testcases.userHomePageTest" hash-for-method="imgDisplayed">imgDisplayed</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.amazon.qa.testcases.userHomePageTest" hash-for-method="select">select</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.amazon.qa.testcases.userHomePageTest" hash-for-method="addItemToCart">addItemToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,16 +142,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="imgDisplayed">
-                  </a> <!-- imgDisplayed -->
-                  <span class="method-name">imgDisplayed</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="select">
-                  </a> <!-- select -->
-                  <span class="method-name">select</span>
+                  <a name="addItemToCart">
+                  </a> <!-- addItemToCart -->
+                  <span class="method-name">addItemToCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -171,18 +159,18 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\CHITTI\Desktop\Amazon\testng.xml</span>
+            <span class="header-content">C:\Users\CHITTI\git\Demo\Amazon\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;UserHomePAGETest&quot;&gt;
+  &lt;test name=&quot;sample&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.amazon.qa.testcases.userHomePageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- UserHomePAGETest --&gt;
+  &lt;/test&gt; &lt;!-- sample --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,7 +182,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">UserHomePAGETest (1 class)</span>
+                <span class="test-name">sample (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,23 +208,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'SearchItems')
 data.setCell(0, 2, 'com.amazon.qa.testcases.userHomePageTest')
-data.setCell(0, 3, 7119);
+data.setCell(0, 3, 13325);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'imgDisplayed')
+data.setCell(1, 1, 'addItemToCart')
 data.setCell(1, 2, 'com.amazon.qa.testcases.userHomePageTest')
-data.setCell(1, 3, 6310);
+data.setCell(1, 3, 719);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'select')
+data.setCell(2, 1, 'validLogin')
 data.setCell(2, 2, 'com.amazon.qa.testcases.userHomePageTest')
-data.setCell(2, 3, 766);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validLogin')
-data.setCell(3, 2, 'com.amazon.qa.testcases.userHomePageTest')
-data.setCell(3, 3, 140);
+data.setCell(2, 3, 486);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -256,9 +240,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.amazon.qa.testcases.userHomePageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">imgDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">selectSearchDropDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -274,23 +267,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validLogin</span>
-                <span class="method-start">35306 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">select</span>
-                <span class="method-start">35450 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">imgDisplayed</span>
-                <span class="method-start">36216 ms</span>
+                <span class="method-start">31887 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SearchItems</span>
-                <span class="method-start">42530 ms</span>
+                <span class="method-start">32379 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addItemToCart</span>
+                <span class="method-start">45707 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">49651 ms</span>
+                <span class="method-start">46430 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

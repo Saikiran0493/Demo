@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-
-
-	<test name="HomePAGETest">
+	<test name="sample">
 		<classes>
-			<class name="com.amazon.qa.testcases.HomePageTest" />
-		</classes>
-	</test>
-	<test name="LoginPAGETest">
-		<classes>
-			<class name="com.amazon.qa.testcases.LoginPageTest" />
-		</classes>
-	</test>
-
-	<test name="UserHomePAGETest">
-		<classes>
+			<!-- class name="com.amazon.qa.testcases.HomePageTest" /> <class name="com.amazon.qa.testcases.LoginPageTest" 
+				/ -->
 			<class name="com.amazon.qa.testcases.userHomePageTest" />
+
 		</classes>
 	</test>
 
-</suite> <!-- Suite -->
+
+</suite>

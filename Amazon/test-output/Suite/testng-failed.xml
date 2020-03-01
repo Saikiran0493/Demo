@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="UserHomePAGETest(failed)">
+  <test name="sample(failed)">
     <classes>
       <class name="com.amazon.qa.testcases.userHomePageTest">
         <methods>
-          <include name="imgDisplayed"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="SearchItems"/>
-          <include name="select"/>
-          <include name="validLogin"/>
+          <include name="addItemToCart"/>
         </methods>
       </class> <!-- com.amazon.qa.testcases.userHomePageTest -->
     </classes>
-  </test> <!-- UserHomePAGETest(failed) -->
+  </test> <!-- sample(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -47,15 +47,14 @@ public class userHomePageTest extends TestBase {
 
 	}
 
-	@Test(priority = 6)
-	public void select() {
-		userHomePage.selectDropdown("Amazon Fashion");
+	@Test(priority = 6, enabled = false)
+	public void selectSearchDropDown() {
 
-		Assert.assertEquals(userHomePage.selectedValue(), "Amazon Fashion");
+		Assert.assertEquals(userHomePage.selectSearchDropdown("Amazon Fashion"), "Amazon Fashion");
 
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 7, enabled = false)
 	public void imgDisplayed() {
 
 		userHomePage.Search();
@@ -68,12 +67,21 @@ public class userHomePageTest extends TestBase {
 
 		userHomePage.typeData("Mens Clothes");
 		userHomePage.Search();
+		userHomePage.selectDropdownByVisibletext("Price: Low to High");
+
+	}
+
+	@Test(priority = 9)
+	public void addItemToCart() {
+		userHomePage.selectItem();
+		
+
 	}
 
 	@AfterClass
 	public void tearDown() {
 
 		// assertsoft.assertAll();
-		driver.quit();
+		//driver.quit();
 	}
 }

@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="50961" started-at="2020-03-01T08:15:52Z" finished-at="2020-03-01T08:16:43Z">
+  <suite name="Suite" duration-ms="47585" started-at="2020-03-01T10:33:41Z" finished-at="2020-03-01T10:34:28Z">
     <groups>
     </groups>
-    <test name="UserHomePAGETest" duration-ms="50961" started-at="2020-03-01T08:15:52Z" finished-at="2020-03-01T08:16:43Z">
+    <test name="sample" duration-ms="47585" started-at="2020-03-01T10:33:41Z" finished-at="2020-03-01T10:34:28Z">
       <class name="com.amazon.qa.testcases.userHomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.userHomePageTest@3a8624]" name="setUp" is-config="true" duration-ms="35262" started-at="2020-03-01T13:45:52Z" finished-at="2020-03-01T13:46:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.qa.testcases.userHomePageTest@4f787b]" name="setUp" is-config="true" duration-ms="31867" started-at="2020-03-01T16:03:41Z" finished-at="2020-03-01T16:04:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLogin()[pri:5, instance:com.amazon.qa.testcases.userHomePageTest@3a8624]" name="validLogin" duration-ms="140" started-at="2020-03-01T13:46:28Z" finished-at="2020-03-01T13:46:28Z">
+        <test-method status="PASS" signature="validLogin()[pri:5, instance:com.amazon.qa.testcases.userHomePageTest@4f787b]" name="validLogin" duration-ms="486" started-at="2020-03-01T16:04:13Z" finished-at="2020-03-01T16:04:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="select()[pri:6, instance:com.amazon.qa.testcases.userHomePageTest@3a8624]" name="select" duration-ms="766" started-at="2020-03-01T13:46:28Z" finished-at="2020-03-01T13:46:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- select -->
-        <test-method status="PASS" signature="imgDisplayed()[pri:7, instance:com.amazon.qa.testcases.userHomePageTest@3a8624]" name="imgDisplayed" duration-ms="6310" started-at="2020-03-01T13:46:28Z" finished-at="2020-03-01T13:46:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- imgDisplayed -->
-        <test-method status="PASS" signature="SearchItems()[pri:8, instance:com.amazon.qa.testcases.userHomePageTest@3a8624]" name="SearchItems" duration-ms="7119" started-at="2020-03-01T13:46:35Z" finished-at="2020-03-01T13:46:42Z">
+        <test-method status="PASS" signature="SearchItems()[pri:8, instance:com.amazon.qa.testcases.userHomePageTest@4f787b]" name="SearchItems" duration-ms="13325" started-at="2020-03-01T16:04:13Z" finished-at="2020-03-01T16:04:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchItems -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.userHomePageTest@3a8624]" name="tearDown" is-config="true" duration-ms="1258" started-at="2020-03-01T13:46:42Z" finished-at="2020-03-01T13:46:43Z">
+        <test-method status="PASS" signature="addItemToCart()[pri:9, instance:com.amazon.qa.testcases.userHomePageTest@4f787b]" name="addItemToCart" duration-ms="719" started-at="2020-03-01T16:04:26Z" finished-at="2020-03-01T16:04:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToCart -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.userHomePageTest@4f787b]" name="tearDown" is-config="true" duration-ms="1140" started-at="2020-03-01T16:04:27Z" finished-at="2020-03-01T16:04:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.amazon.qa.testcases.userHomePageTest -->
-    </test> <!-- UserHomePAGETest -->
+    </test> <!-- sample -->
   </suite> <!-- Suite -->
 </testng-results>
