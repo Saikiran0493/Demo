@@ -8,6 +8,8 @@
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="addItemToCart"/>
+          <include name="SearchItems"/>
+          <include name="validLogin"/>
         </methods>
       </class> <!-- com.amazon.qa.testcases.userHomePageTest -->
     </classes>

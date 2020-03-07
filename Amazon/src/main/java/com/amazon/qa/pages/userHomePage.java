@@ -12,42 +12,45 @@ import com.amazon.base.TestBase;
 public class userHomePage extends TestBase {
 
 	@FindBy(id = "searchDropdownBox")
-	WebElement dropdown;
+	public WebElement dropdown;
 
 	@FindBy(xpath = "//div[@class='s-result-list s-search-results sg-row'][1]/div[3]")
-	WebElement SelectItem;
+	public WebElement SelectItem;
 
 	@FindBy(xpath = "//a[@id='nav-link-accountList']/span[1]")
-	WebElement signIn;
+	public WebElement signIn;
 
 	@FindBy(css = ".nav-search-label")
-	WebElement selectedValue;
+	public WebElement selectedValue;
 
 	@FindBy(xpath = "//input[@type='submit']")
-	WebElement search;
+	public WebElement search;
 
 	@FindBy(xpath = "//select[@id='s-result-sort-select']")
-	WebElement sortDropdown;
+	public WebElement sortDropdown;
 
 	@FindBy(xpath = "//img[@alt='Amazon Fashion']")
-	WebElement imgDisplayed;
+	public WebElement imgDisplayed;
 
 	@FindBy(id = "twotabsearchtextbox")
-	WebElement inputdata;
+	public WebElement inputdata;
 
-	// twotabsearchtextbox
 	public userHomePage() {
 		PageFactory.initElements(driver, this);
 	}
 
-	public String selectSearchDropdown(String value) {
+	public String selectDropdownByVisibletext(WebElement element, String value) {
 
 		// sortDropdown.click();
-		Select category = new Select(dropdown);
+		Select category = new Select(element);
 		category.selectByVisibleText(value);
+		return selectedValue(selectedValue);
 
-		return selectedValue.getText();
+	}
 
+	public String selectedValue(WebElement element) {
+
+		return element.getText();
 	}
 
 	public void Search() {
@@ -55,13 +58,6 @@ public class userHomePage extends TestBase {
 		search.click();
 	}
 
-	public void selectDropdownByVisibletext(String visibleText) {
-
-		Select dropDown = new Select(sortDropdown);
-		dropDown.selectByVisibleText(visibleText);
-	}
-
-	
 	public boolean Displayed() {
 
 		return imgDisplayed.isDisplayed();

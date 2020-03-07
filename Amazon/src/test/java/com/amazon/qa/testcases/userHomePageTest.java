@@ -11,12 +11,14 @@ import com.amazon.base.TestBase;
 import com.amazon.qa.pages.HomePage;
 import com.amazon.qa.pages.LoginPage;
 import com.amazon.qa.pages.userHomePage;
+import com.amazon.utils.ExcelReader;
 import com.amazon.utils.takeScreenshot;
 
 public class userHomePageTest extends TestBase {
 	LoginPage Login;
 	HomePage HomePage;
 	userHomePage userHomePage;
+	ExcelReader excel;
 
 	public userHomePageTest() {
 		// TODO Auto-generated constructor stub
@@ -29,8 +31,10 @@ public class userHomePageTest extends TestBase {
 		HomePage = new HomePage();
 		HomePage.login();
 		Login = new LoginPage();
-
+		excel= new ExcelReader();
 		try {
+			excel.readExcel();
+			excel.getCellData("login");
 			Login.login(prop.getProperty("username"), prop.getProperty("password"));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -50,7 +54,8 @@ public class userHomePageTest extends TestBase {
 	@Test(priority = 6, enabled = false)
 	public void selectSearchDropDown() {
 
-		Assert.assertEquals(userHomePage.selectSearchDropdown("Amazon Fashion"), "Amazon Fashion");
+		Assert.assertEquals(userHomePage.selectDropdownByVisibletext(userHomePage.dropdown, "Amazon Fashion"),
+				"Amazon Fashion");
 
 	}
 
@@ -67,14 +72,13 @@ public class userHomePageTest extends TestBase {
 
 		userHomePage.typeData("Mens Clothes");
 		userHomePage.Search();
-		userHomePage.selectDropdownByVisibletext("Price: Low to High");
+		userHomePage.selectDropdownByVisibletext(userHomePage.sortDropdown, "Price: Low to High");
 
 	}
 
 	@Test(priority = 9)
 	public void addItemToCart() {
 		userHomePage.selectItem();
-		
 
 	}
 
@@ -82,6 +86,6 @@ public class userHomePageTest extends TestBase {
 	public void tearDown() {
 
 		// assertsoft.assertAll();
-		//driver.quit();
+		// driver.quit();
 	}
 }
