@@ -31,7 +31,6 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
-			System.out.print(System.getProperty("user.dir"));
 			System.setProperty("webdriver.chrome.driver",
 					"C:\\Users\\CHITTI\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
 			driver = new ChromeDriver();

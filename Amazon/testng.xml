@@ -3,8 +3,8 @@
 <suite name="Suite">
 	<test name="sample">
 		<classes>
-			<!-- class name="com.amazon.qa.testcases.HomePageTest" /> <class name="com.amazon.qa.testcases.LoginPageTest" 
-				/ -->
+			<class name="com.amazon.qa.testcases.HomePageTest" />
+			<class name="com.amazon.qa.testcases.LoginPageTest" />
 			<class name="com.amazon.qa.testcases.userHomePageTest" />
 
 		</classes>

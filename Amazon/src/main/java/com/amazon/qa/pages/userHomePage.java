@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Parameters;
 
 import com.amazon.base.TestBase;
 
@@ -14,7 +15,7 @@ public class userHomePage extends TestBase {
 	@FindBy(id = "searchDropdownBox")
 	public WebElement dropdown;
 
-	@FindBy(xpath = "//div[@class='s-result-list s-search-results sg-row'][1]/div[3]")
+	@FindBy(xpath = "//img[@alt='EYEBOGLER Regular Fit Cotton T Shirts for Men Full Sleeve']")
 	public WebElement SelectItem;
 
 	@FindBy(xpath = "//a[@id='nav-link-accountList']/span[1]")
@@ -38,19 +39,13 @@ public class userHomePage extends TestBase {
 	public userHomePage() {
 		PageFactory.initElements(driver, this);
 	}
-
+	
 	public String selectDropdownByVisibletext(WebElement element, String value) {
 
-		// sortDropdown.click();
 		Select category = new Select(element);
 		category.selectByVisibleText(value);
-		return selectedValue(selectedValue);
+		return selectedValue.getText();
 
-	}
-
-	public String selectedValue(WebElement element) {
-
-		return element.getText();
 	}
 
 	public void Search() {
@@ -76,6 +71,7 @@ public class userHomePage extends TestBase {
 	}
 
 	public void selectItem() {
+		
 
 		SelectItem.click();
 
